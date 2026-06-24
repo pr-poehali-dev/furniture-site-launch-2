@@ -3,9 +3,9 @@ import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 
 const IMG = {
-  table: 'https://cdn.poehali.dev/projects/8cca4d77-3b1c-4de9-912f-8872f5f8b6f3/files/d89e685e-5366-4f5b-8544-442dac0039d8.jpg',
-  wardrobe: 'https://cdn.poehali.dev/projects/8cca4d77-3b1c-4de9-912f-8872f5f8b6f3/files/2e018534-7311-47f6-9e9e-47c526c914f1.jpg',
-  kitchen: 'https://cdn.poehali.dev/projects/8cca4d77-3b1c-4de9-912f-8872f5f8b6f3/files/fc38871c-7fdf-44d9-a471-c66dd8c4471e.jpg',
+  cabinet: 'https://cdn.poehali.dev/projects/8cca4d77-3b1c-4de9-912f-8872f5f8b6f3/files/f279b92b-adbd-4ff4-9e68-c41874811abf.jpg',
+  wardrobe: 'https://cdn.poehali.dev/projects/8cca4d77-3b1c-4de9-912f-8872f5f8b6f3/files/9607208b-85da-4735-92fa-f9a01b7d3e5e.jpg',
+  kitchen: 'https://cdn.poehali.dev/projects/8cca4d77-3b1c-4de9-912f-8872f5f8b6f3/files/b4cd1925-0fed-4bcb-973d-f4b68861e6d2.jpg',
 };
 
 const NAV = [
@@ -17,9 +17,8 @@ const NAV = [
 ];
 
 const SERVICES = [
-  { icon: 'ChefHat', title: 'Кухни на заказ', text: 'Проектирование и изготовление кухонных гарнитуров из массива и шпона под ваше пространство.' },
+  { icon: 'ChefHat', title: 'Кухни на заказ', text: 'Проектирование и изготовление кухонных гарнитуров из корпусной мебели и шпона под ваше пространство.' },
   { icon: 'DoorClosed', title: 'Гардеробные и шкафы', text: 'Встроенные системы хранения с продуманной эргономикой и фурнитурой премиум-класса.' },
-  { icon: 'Table', title: 'Столы и стулья', text: 'Обеденные и рабочие столы из цельного дерева — каждое изделие уникально.' },
   { icon: 'Sofa', title: 'Корпусная мебель', text: 'Комоды, тумбы, стеллажи и витрины по индивидуальным размерам и эскизам.' },
 ];
 
@@ -27,21 +26,21 @@ const FILTERS = [
   { id: 'all', label: 'Все работы' },
   { id: 'kitchen', label: 'Кухни' },
   { id: 'wardrobe', label: 'Гардеробные' },
-  { id: 'table', label: 'Столы' },
+  { id: 'cabinet', label: 'Корпусная мебель' },
 ];
 
 const WORKS = [
-  { img: IMG.table, cat: 'table', title: 'Обеденный стол из дуба', place: 'Частный дом, Москва' },
-  { img: IMG.wardrobe, cat: 'wardrobe', title: 'Гардеробная из ореха', place: 'Квартира, Санкт-Петербург' },
-  { img: IMG.kitchen, cat: 'kitchen', title: 'Кухня с латунными ручками', place: 'Загородный дом' },
-  { img: IMG.kitchen, cat: 'kitchen', title: 'Кухня из массива ясеня', place: 'Апартаменты, Москва' },
-  { img: IMG.table, cat: 'table', title: 'Рабочий стол на заказ', place: 'Кабинет, Казань' },
-  { img: IMG.wardrobe, cat: 'wardrobe', title: 'Встроенный шкаф-купе', place: 'Спальня, Сочи' },
+  { img: IMG.cabinet, cat: 'cabinet', title: 'Белый стеллаж в гостиную', place: 'Частный дом, Москва' },
+  { img: IMG.wardrobe, cat: 'wardrobe', title: 'Белая гардеробная', place: 'Квартира, Санкт-Петербург' },
+  { img: IMG.kitchen, cat: 'kitchen', title: 'Белая кухня на заказ', place: 'Загородный дом' },
+  { img: IMG.kitchen, cat: 'kitchen', title: 'Кухня в белом цвете', place: 'Апартаменты, Москва' },
+  { img: IMG.cabinet, cat: 'cabinet', title: 'Белая корпусная мебель', place: 'Кабинет, Казань' },
+  { img: IMG.wardrobe, cat: 'wardrobe', title: 'Встроенный белый шкаф-купе', place: 'Спальня, Сочи' },
 ];
 
 const REVIEWS = [
   { name: 'Анна Светлова', role: 'Дизайнер интерьера', text: 'Работаю с мастером уже три года. Сроки соблюдаются всегда, качество исполнения — образцовое. Рекомендую без сомнений.' },
-  { name: 'Дмитрий Орлов', role: 'Частный клиент', text: 'Заказывал кухню из массива. Результат превзошёл ожидания — внимание к деталям на каждом миллиметре.' },
+  { name: 'Дмитрий Орлов', role: 'Частный клиент', text: 'Заказывал кухню из корпусной мебели. Результат превзошёл ожидания — внимание к деталям на каждом миллиметре.' },
   { name: 'Елена Кравцова', role: 'Архитектор', text: 'Профессионал высочайшего класса. Помог реализовать сложный проект гардеробной точно по эскизам.' },
 ];
 
@@ -59,7 +58,7 @@ const Index = () => {
       <header className="fixed top-0 inset-x-0 z-40 bg-background/85 backdrop-blur-md border-b border-border">
         <div className="container flex items-center justify-between h-20">
           <button onClick={() => scrollTo('hero')} className="font-display text-2xl font-semibold tracking-wide text-primary">
-            ЛАРИОНОВ<span className="text-accent">.</span>
+            ЗАЙНАШЕВ<span className="text-accent">.</span>
           </button>
           <nav className="hidden md:flex items-center gap-9">
             {NAV.map((n) => (
@@ -77,8 +76,8 @@ const Index = () => {
       {/* Hero */}
       <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={IMG.table} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/30" />
+          <img src={IMG.kitchen} alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-foreground/75 via-foreground/45 to-foreground/10" />
         </div>
         <div className="container relative z-10">
           <div className="max-w-2xl text-primary-foreground animate-fade-in">
@@ -87,7 +86,7 @@ const Index = () => {
               Мебель, созданная вручную для вашего дома
             </h1>
             <p className="text-lg text-primary-foreground/80 max-w-lg mb-10 leading-relaxed">
-              Проектирую и изготавливаю мебель из массива на заказ. Каждое изделие — результат точного расчёта и ручного труда.
+              Проектирую и изготавливаю корпусную мебель на заказ. Каждое изделие — результат точного расчёта и ручного труда.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button onClick={() => scrollTo('portfolio')} className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-none h-13 px-8 uppercase tracking-wider text-xs">
@@ -120,7 +119,7 @@ const Index = () => {
             <p className="uppercase tracking-[0.3em] text-accent text-sm mb-4">Что я делаю</p>
             <h2 className="font-display text-4xl md:text-5xl text-primary">Услуги мастерской</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
             {SERVICES.map((s) => (
               <div key={s.title} className="bg-card p-8 group hover:bg-secondary transition-colors">
                 <Icon name={s.icon} size={36} className="text-accent mb-6" />
@@ -144,15 +143,15 @@ const Index = () => {
           </div>
           <div>
             <p className="uppercase tracking-[0.3em] text-accent text-sm mb-4">О мастере</p>
-            <h2 className="font-display text-4xl md:text-5xl mb-6">Андрей Ларионов</h2>
+            <h2 className="font-display text-4xl md:text-5xl mb-6">Ильдар Зайнашев</h2>
             <p className="text-primary-foreground/80 leading-relaxed mb-5">
-              Более шестнадцати лет я создаю мебель из натурального дерева. Начинал подмастерьем в столярной мастерской, сегодня руковожу собственным производством полного цикла.
+              Более шестнадцати лет я создаю корпусную мебель на заказ. Начинал подмастерьем в столярной мастерской, сегодня руковожу собственным производством полного цикла.
             </p>
             <p className="text-primary-foreground/80 leading-relaxed mb-8">
-              Я лично участвую в каждом проекте — от первого эскиза до финальной шлифовки. Работаю только с проверенным массивом и фурнитурой европейского качества.
+              Я лично участвую в каждом проекте — от первого эскиза до финальной сборки. Работаю только с проверенными материалами и фурнитурой европейского качества.
             </p>
             <div className="space-y-4">
-              {['Личный контроль на всех этапах', 'Только натуральные материалы', 'Точные сроки и прозрачная смета'].map((p) => (
+              {['Личный контроль на всех этапах', 'Только качественные материалы', 'Точные сроки и прозрачная смета'].map((p) => (
                 <div key={p} className="flex items-center gap-3">
                   <Icon name="Check" size={18} className="text-accent" />
                   <span className="text-primary-foreground/90">{p}</span>
@@ -249,7 +248,7 @@ const Index = () => {
             <div className="space-y-6">
               {[
                 { icon: 'Phone', label: 'Телефон', value: '+7 (495) 123-45-67' },
-                { icon: 'Mail', label: 'Почта', value: 'master@larionov-mebel.ru' },
+                { icon: 'Mail', label: 'Почта', value: 'master@zaynashev-mebel.ru' },
                 { icon: 'MapPin', label: 'Мастерская', value: 'Москва, ул. Столярная, 12' },
               ].map((c) => (
                 <div key={c.label} className="flex items-center gap-5">
@@ -287,7 +286,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-primary border-t border-primary-foreground/10 py-8">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4 text-primary-foreground/60 text-sm">
-          <div className="font-display text-xl text-primary-foreground">ЛАРИОНОВ<span className="text-accent">.</span></div>
+          <div className="font-display text-xl text-primary-foreground">ЗАЙНАШЕВ<span className="text-accent">.</span></div>
           <p>© 2026 Мастерская авторской мебели. Все права защищены.</p>
         </div>
       </footer>
