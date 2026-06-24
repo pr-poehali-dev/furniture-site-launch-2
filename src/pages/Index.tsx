@@ -247,8 +247,7 @@ const Index = () => {
             </p>
             <div className="space-y-6">
               {[
-                { icon: 'Phone', label: 'Телефон', value: '+7 (495) 123-45-67' },
-                { icon: 'Mail', label: 'Почта', value: 'master@zaynashev-mebel.ru' },
+                { icon: 'Phone', label: 'Телефон', value: '+7 (927) 461-82-75' },
                 { icon: 'MapPin', label: 'Мастерская', value: 'Москва, ул. Столярная, 12' },
               ].map((c) => (
                 <div key={c.label} className="flex items-center gap-5">
