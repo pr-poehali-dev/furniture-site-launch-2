@@ -17,7 +17,7 @@ const NAV = [
 ];
 
 const SERVICES = [
-  { icon: 'ChefHat', title: 'Кухни на заказ', text: 'Проектирование и изготовление кухонных гарнитуров из корпусной мебели и шпона под ваше пространство.' },
+  { icon: 'ChefHat', title: 'Кухни на заказ', text: 'Проектирование и изготовление кухонных гарнитуров из корпусной мебели под ваше пространство.' },
   { icon: 'DoorClosed', title: 'Гардеробные и шкафы', text: 'Встроенные системы хранения с продуманной эргономикой и фурнитурой премиум-класса.' },
   { icon: 'Sofa', title: 'Корпусная мебель', text: 'Комоды, тумбы, стеллажи и витрины по индивидуальным размерам и эскизам.' },
 ];
@@ -103,7 +103,7 @@ const Index = () => {
       {/* Stats */}
       <section className="border-b border-border bg-card">
         <div className="container grid grid-cols-2 md:grid-cols-4 divide-x divide-border">
-          {[['16', 'лет опыта'], ['340+', 'проектов'], ['100%', 'ручная работа'], ['24', 'месяца гарантии']].map(([n, l]) => (
+          {[['21', 'лет опыта'], ['340+', 'проектов'], ['100%', 'ручная работа'], ['24', 'месяца гарантии']].map(([n, l]) => (
             <div key={l} className="py-10 px-4 text-center">
               <div className="font-display text-4xl md:text-5xl text-accent">{n}</div>
               <div className="text-xs uppercase tracking-widest text-muted-foreground mt-2">{l}</div>
@@ -145,7 +145,7 @@ const Index = () => {
             <p className="uppercase tracking-[0.3em] text-accent text-sm mb-4">О мастере</p>
             <h2 className="font-display text-4xl md:text-5xl mb-6">Ильдар Зайнашев</h2>
             <p className="text-primary-foreground/80 leading-relaxed mb-5">
-              Более шестнадцати лет я создаю корпусную мебель на заказ. Начинал подмастерьем в столярной мастерской, сегодня руковожу собственным производством полного цикла.
+              Более двадцати одного года я создаю корпусную мебель на заказ. Начинал подмастерьем в столярной мастерской, сегодня руковожу собственным производством полного цикла.
             </p>
             <p className="text-primary-foreground/80 leading-relaxed mb-8">
               Я лично участвую в каждом проекте — от первого эскиза до финальной сборки. Работаю только с проверенными материалами и фурнитурой европейского качества.
